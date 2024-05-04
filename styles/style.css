@@ -193,8 +193,10 @@
 }
 
 .project {
-    background: url(../images/collection.jpg) 0 0/cover fixed;
+    background: url(../images/collection.jpg);
     background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     height: 404px;
     display: flex
 }
