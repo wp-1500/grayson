@@ -194,6 +194,7 @@
 
 .project {
     background: url(../images/collection.jpg) 0 0/cover fixed;
+    background-position: center;
     height: 404px;
     display: flex
 }
