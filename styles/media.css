@@ -1,0 +1,125 @@
+@media (max-width:1040px) {
+
+    .commerce__cards,
+    .products__bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px
+    }
+}
+
+@media (max-width:950px) {
+
+    .checkbox,
+    .close {
+        position: absolute;
+        right: 15px
+    }
+
+    .burger {
+        display: block;
+        visibility: visible
+    }
+
+    .header__nav {
+        display: none;
+        visibility: hidden
+    }
+
+    .header__nav.adapt {
+        display: flex;
+        visibility: visible;
+        position: fixed;
+        width: 100%;
+        background: rgba(255, 255, 255, .7);
+        backdrop-filter: blur(3px);
+        z-index: 999;
+        padding: 15px
+    }
+
+    .adapt-list {
+        position: absolute;
+        background: #fff;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        transition: .3s;
+        transform: translateY(-100%)
+    }
+
+    .checkbox {
+        width: 35px;
+        height: 35px;
+        z-index: 1000;
+        opacity: 0
+    }
+
+    .close {
+        top: 15px;
+        font-size: 35px
+    }
+
+    .checkbox:checked~.adapt-list {
+        transform: translateY(0)
+    }
+
+    .adapt-list ul {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .adapt-list ul a {
+        font-size: 24px
+    }
+
+    .adapt-list .header__nav-search {
+        order: -1
+    }
+
+    .dropdown__menu {
+        position: static;
+        height: 0;
+        visibility: visible;
+        border: none
+    }
+
+    .dropdown:hover .dropdown__menu {
+        opacity: 1;
+        height: 170px
+    }
+
+    .footer__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left
+    }
+}
+
+@media (max-width:640px) {
+    .header__content h1 {
+        font-size: 30px
+    }
+}
+
+@media (max-width:540px) {
+
+    .footer__content-form,
+    .footer__content-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center
+    }
+
+    .footer__content a {
+        font-size: 20px
+    }
+}

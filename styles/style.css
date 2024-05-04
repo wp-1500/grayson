@@ -1,0 +1,370 @@
+@import url(fonts.css);
+
+.commerce__cards-card:hover .commerce__card-info,
+.products__card-item:hover .products__card-info {
+    transform: translateY(0)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: 0;
+    border: none;
+    list-style: none;
+    font-family: Playfair;
+    font-weight: 400;
+    user-select: none
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 40px
+}
+
+.header__nav-list a {
+    font-size: 12px;
+    color: #000
+}
+
+.header__nav-search {
+    display: flex;
+    gap: 4px
+}
+
+.header__nav-search input {
+    border: 1px solid #41a28e;
+    padding: 3.5px 12px;
+    font-size: 14px
+}
+
+.header__nav-search button {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #41a28e;
+    color: #fff;
+    cursor: pointer
+}
+
+.dropdown>a:after {
+    content: url(../images/down.svg);
+    padding-left: 5px
+}
+
+.dropdown {
+    position: relative
+}
+
+.dropdown__menu {
+    background: grey;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    width: 160px;
+    position: absolute;
+    bottom: -140px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s
+}
+
+.dropdown:hover .dropdown__menu {
+    opacity: 1;
+    visibility: visible
+}
+
+.dropdown__menu a {
+    padding: 12px 30px;
+    display: block;
+    border-bottom: 1px solid #e5e5e5;
+    color: #fff
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(../images/headerBg.jpg) center/cover;
+    color: #fff;
+    margin-bottom: 48px
+}
+
+.header__content h1 {
+    font-size: 50px;
+    padding: 17px 61px;
+    background: rgba(0, 0, 0, .7)
+}
+
+.header__content p {
+    margin: 30px 0 50px;
+    font-size: 22px;
+    text-shadow: 3px 0 #000
+}
+
+.btn {
+    font-size: 12px;
+    color: #000;
+    background: #fff;
+    padding: 22px 35px;
+    transition: .3s
+}
+
+.btn:hover {
+    background: #41a28e;
+    color: #fff
+}
+
+.commerce__cards-card {
+    position: relative;
+    width: 255px;
+    display: flex;
+    overflow: hidden;
+    border: 1px solid #41a28e
+}
+
+.commerce__card-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2px;
+    background: rgba(75, 72, 72, .7);
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    transform: translateY(100%);
+    transition: .3s
+}
+
+.commerce__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 52px
+}
+
+.commerce__content,
+.products__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 72px
+}
+
+.products__top {
+    margin-bottom: 69px;
+    margin-top: 50px
+}
+
+.commerce__content h2,
+.products__top h2 {
+    font-size: 50px;
+    color: #000;
+    text-align: center
+}
+
+.commerce__content p,
+.products__top p {
+    font-family: Roboto;
+    text-align: center;
+    color: #666;
+    max-width: 496px
+}
+
+.project {
+    background: url(../images/collection.jpg) 0 0/cover fixed;
+    height: 404px;
+    display: flex
+}
+
+.project__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+    color: #fff
+}
+
+.project__content h2 {
+    font-size: 20px
+}
+
+.project__content p {
+    font-size: 50px;
+    margin: 3px 0 22px
+}
+
+.footer input,
+.footer p,
+.footer__content-list a {
+    font-size: 14px;
+    font-family: Roboto
+}
+
+.products__card-item {
+    position: relative;
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden
+}
+
+.extra-info,
+.products__card-info {
+    position: absolute;
+    left: 0;
+    transition: .3s
+}
+
+.products__bottom,
+.products__card-info {
+    justify-content: space-between;
+    display: flex
+}
+
+.products__card img {
+    width: 100%
+}
+
+.products__card-info {
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    padding: 16px 19px;
+    transform: translateY(100%)
+}
+
+.products__card-info button {
+    background: 0 0;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    gap: 14px;
+    align-items: center
+}
+
+.products__card div {
+    display: flex;
+    gap: 20px
+}
+
+.products__card-price {
+    display: flex;
+    flex-direction: column;
+    gap: 6px !important;
+    margin-top: 23px
+}
+
+.products__card-price span {
+    text-decoration: line-through;
+    color: #666;
+    margin-right: 15px
+}
+
+.extra-info {
+    top: 0;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Roboto;
+    background: #4b484b;
+    color: #fff;
+    opacity: .5
+}
+
+.products__card-item:hover .extra-info {
+    opacity: 1
+}
+
+.footer {
+    background: #000;
+    padding: 36px 0;
+    margin-top: 50px;
+    color: #fff
+}
+
+.footer-title {
+    font-size: 24px;
+    margin-bottom: 40px
+}
+
+.footer__content-list a {
+    color: #fff;
+    display: block;
+    margin-bottom: 17px;
+    width: max-content
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between
+}
+
+.footer__content-list:nth-child(3) a {
+    margin-bottom: 7.5px;
+    display: flex;
+    gap: 10px;
+    align-items: center
+}
+
+.footer__content-form,
+.footer__content-list {
+    width: 255px
+}
+
+.footer__content-input {
+    display: flex
+}
+
+.footer input {
+    padding: 14px 10px
+}
+
+.footer button {
+    padding: 12px 10px;
+    background: #41a28e;
+    color: #fff;
+    cursor: pointer
+}
+
+.footer p {
+    margin: 20px 0
+}
+
+.burger,
+.payments i {
+    font-size: 30px
+}
+
+.payments {
+    display: flex;
+    gap: 25px
+}
+
+.burger,
+.header__nav.adapt {
+    display: none;
+    visibility: hidden
+}
